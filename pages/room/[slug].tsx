@@ -10,7 +10,7 @@ const RedirectSlug = ({ redirect }: { redirect: string }) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const id = context?.params.slug || "";
+  const id = context?.params?.slug || "";
 
   const base = Airtable.base("appl7i287x5O6NeX8");
 
