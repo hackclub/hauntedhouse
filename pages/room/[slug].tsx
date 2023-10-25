@@ -1,5 +1,6 @@
 import Airtable, { FieldSet } from "airtable";
 import { GetServerSideProps } from "next";
+import GithubSlugger from "github-slugger";
 
 const RedirectSlug = ({ redirect }: { redirect: string }) => {
   return (
@@ -12,30 +13,29 @@ const RedirectSlug = ({ redirect }: { redirect: string }) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const id = context?.params?.slug || "";
 
+  const slugger = new GithubSlugger();
+
   const base = Airtable.base("appl7i287x5O6NeX8");
 
   const items: any[] = [];
-  const res = await base.table("Projects — Chicago").select({});
+  const res = await base
+    .table("Projects — Chicago")
+    .select({ filterByFormula: `{Slug}="${id}"` });
 
-  const hello = await res.eachPage(
-    (records, fetchNextPage) => {
-      records.forEach(function (record) {
-        console.log("Retrieved", record.fields.Deployment);
+  let deploymentLink = "";
 
-        items.push(record);
-      });
-      fetchNextPage;
-    },
-    (err) => {
-      console.log(err);
-    }
-  );
+  const result = await res.firstPage();
 
-  console.log(res, items);
+  if (result[0]) {
+    deploymentLink = result[0].fields["Deployment"]?.toString() || "";
+  } else {
+    deploymentLink = "/";
+  }
 
   return {
-    props: {
-      redirect: "hi",
+    redirect: {
+      permanent: false,
+      destination: deploymentLink,
     },
   };
 };
