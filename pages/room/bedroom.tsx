@@ -6,8 +6,13 @@ const Bedroom = () => {
         src="/IMG_0025.png"
         className="w-full overflow-hidden object-cover h-full absolute"
       />
-      <div className="max-h-36 h-[13%] w-2 bg-red-500 absolute z-99 mt-[30vh] ml-[50%]"></div>
-      <div className="max-h-16 max-w-12 h-[13%] w-[13%] bg-red-100 absolute z-99 ml-[70%] mt-[20vh]"></div>
+
+      <a href="/room/library1">
+        <img
+          src="/scaryportrait.jpeg"
+          className="h-56 brightness-50 absolute z-99 left-[50%] top-[20%] animate-pulse"
+        />
+      </a>
     </div>
   );
 };
