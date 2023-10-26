@@ -1,7 +1,10 @@
+import Doors from "@/components/Doors";
+
 const Bedroom = () => {
   //   return <img src="/IMG_0025.png" className="w-screen h-screen bg-center" />;
   return (
     <div>
+      <Doors />
       <img
         src="/IMG_0025.png"
         className="w-full overflow-hidden object-cover h-full absolute"

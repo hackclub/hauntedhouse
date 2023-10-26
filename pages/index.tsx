@@ -1,6 +1,3 @@
-import FilterButton from "@/components/FilterButton";
-import Nav from "@/components/Nav";
-import Rooms from "@/components/Rooms";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
