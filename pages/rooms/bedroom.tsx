@@ -9,7 +9,7 @@ const Bedroom = () => {
         className="w-full overflow-hidden object-cover h-full absolute"
       />
 
-      <a href="/room/library1">
+      <a href="/rooms/library1">
         <img
           src="/scaryportrait.jpeg"
           className="h-56 brightness-50 absolute z-99 left-[50%] top-[20%] animate-pulse"

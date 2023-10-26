@@ -22,7 +22,7 @@ function Home() {
           if (!nextSlide) {
             setNextSlide(true);
           } else {
-            router.push("/room/bedroom");
+            router.push("/rooms/bedroom");
           }
         }}
         src={nextSlide ? "/frontporch.jpeg" : "/scoobydoo.webp"}
