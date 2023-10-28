@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +16,36 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+@font-face {
+  font-family: "WhizBang Bold";
+  src: url("/WhizBangBold.ttf");
+}
+
+@font-face {
+  font-family: "The Fright House";
+  src: url("/TheFrightHouse/TheFrightHouseRegular.woff2") format("woff2"),
+    url("/TheFrightHouse/TheFrightHouseRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WhizBang Roman";
+  src: url("/WhizBangRoman.ttf");
+}
+
+.font-fright {
+  font-family: "The Fright House", serif;
+}
+.font-comic-bold {
+  font-family: "WhizBang Bold", cursive;
+}
+
+.font-comic {
+  font-family: "WhizBang Roman", cursive;
 }
 
 body {
