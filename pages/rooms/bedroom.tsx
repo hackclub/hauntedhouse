@@ -49,7 +49,7 @@ const Bedroom = () => {
         }}
         src="/scaryportrait.jpeg"
         style={{ transform: "rotateY(210deg)" }}
-        className={`h-56 brightness-50 absolute z-99 left-[25vw] top-[15vh] ${
+        className={`h-56 brightness-50 absolute z-99 left-[25vw] top-[15vh] cursor-pointer ${
           startTimer ? "brightness-80" : "animate-pulse"
         }`}
       />
@@ -59,7 +59,7 @@ const Bedroom = () => {
           setShowPuzzle(true);
         }}
         src="/ouijaboard.jpeg"
-        className="max-w-sm animate-pulse brightness-[50%] ml-[20vw] bottom-10 border-2 rounded-lg border-orange-800 absolute z-99"
+        className="max-w-sm animate-pulse brightness-[50%] ml-[20vw] bottom-10 border-2 rounded-lg border-orange-800 absolute z-99 cursor-pointer"
       />
 
       {showPuzzle && (

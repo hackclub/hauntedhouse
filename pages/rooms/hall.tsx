@@ -23,7 +23,7 @@ const Hall = () => {
           onClick={() => {
             router.push("/rooms/bedroom");
           }}
-          className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse transition delay-100"
+          className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse transition delay-100 cursor-pointer"
         ></div>
 
         <div
@@ -33,7 +33,7 @@ const Hall = () => {
             );
             // router.push("/rooms/kitchen");
           }}
-          className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse"
+          className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse cursor-pointer"
         >
           {/* <p className="">Bedroom</p> */}
         </div>
@@ -44,7 +44,7 @@ const Hall = () => {
               "Uh oh! This room leads to the abyss. Do you want to fill this void? Create it if you dare..."
             );
           }}
-          className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse"
+          className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse cursor-pointer"
         ></div>
       </div>
 
