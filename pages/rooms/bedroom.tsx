@@ -47,7 +47,7 @@ const Bedroom = () => {
         style={{
           top: `${clamp(-20 + elapsed / 500, -20, 80)}vh`,
         }}
-        className={`w-36 h-36 brightness-50 rotate-180  transition duration-100 absolute ${
+        className={`left-1/2 w-36 h-36 brightness-50 rotate-180  transition duration-100 absolute ${
           clamp(-20 + elapsed / 500, -20, 80) === 80 ? "rotate-[225deg]" : ""
         } `}
       />
@@ -56,7 +56,6 @@ const Bedroom = () => {
       {/* <p className="text-white absolute z-99">
         {-5 * Math.pow((new Date() - elapsed) / 1000, 2)}
       </p> */}
-      {elapsed}
     </div>
   );
 };
