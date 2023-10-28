@@ -1,6 +1,6 @@
 import { OuijaBoard } from "@/components/OuijaPopup";
 import { useEffect, useState } from "react";
-import useSound from "use-sound";
+import useSound from "../../node_modules/use-sound";
 
 const clamp = (val: number, min: number, max: number) =>
   Math.min(Math.max(val, min), max);
