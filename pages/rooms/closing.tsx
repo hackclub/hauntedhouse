@@ -7,7 +7,7 @@ const clamp = (val: number, min: number, max: number) =>
 
 const Closing = () => {
   <div>
-    <h1 className="text-6xl font-fright">
+    <h1 className="text-6xl font-fright text-orange-500">
       Thanks for attending Haunted House! Remember to push any final changes
     </h1>
   </div>;
