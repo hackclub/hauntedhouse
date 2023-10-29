@@ -23,7 +23,8 @@ function Home() {
           if (!nextSlide) {
             setNextSlide(true);
           } else {
-            router.push("/rooms/hall");
+            console.log("hi");
+            router.push("/rooms/bedroom");
           }
         }}
         src={nextSlide ? "/frontporch.png" : "/hauntedhouseouter.png"}
