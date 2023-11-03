@@ -24,7 +24,7 @@ function Home() {
             setNextSlide(true);
           } else {
             console.log("hi");
-            router.push("/rooms/bedroom");
+            router.push("/rooms/hall");
           }
         }}
         src={nextSlide ? "/frontporch.png" : "/hauntedhouseouter.png"}
