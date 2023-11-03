@@ -21,7 +21,7 @@ const Hall = () => {
       <div className="w-full h-screen flex gap-[2vw]">
         <div
           onClick={() => {
-            router.push("/rooms/five-night-in-france");
+            router.push("/rooms/bedroom");
           }}
           className="h-full w-full bg-gray-100 bg-opacity-20 animate-pulse transition delay-100 cursor-pointer"
         ></div>
