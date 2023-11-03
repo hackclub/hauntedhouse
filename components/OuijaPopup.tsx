@@ -189,7 +189,7 @@ export const OuijaBoard = () => {
           <div className="flex justify-center">
             <button
               onClick={() => {
-                router.push(`/rooms/five-night-in-france`);
+                router.push(`/rooms/hall`);
               }}
               className="rounded-md bg-orange-500 text-white px-6 py-2 mx-auto"
             >
